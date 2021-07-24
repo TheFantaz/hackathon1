@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+</style>
+<body>
+    <h1>Reminder</h1>
+    <input type="text" placeholder="Insert reminder" id="RText">
+    <input type="number" id="RTIME">
+    <button id="RButton">Start</button>
+
+<!--Script-->
+<script>
+
+document.getElementById("RButton").addEventListener("click",myFunction())
+function myFunction() {
+    var the_text = document.getElementById("RText").value;
+    var the_time = document.getElementById("searchTxt").value;
+
+    setTimeout(function(){ alert(); }, the_text*60000);
+}
+
+
+</script>
+</body>
+</html>
