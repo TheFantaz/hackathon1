@@ -4,9 +4,10 @@
     "description":"Timer",
     "version":"1.0.0",
     "browser_action":{
-        "defult_popup": "Popup.html",
-        "defult_title": "Reminder"
-    },"permissions": [
+        "default_popup": "Popup.html",
+        "default_title": "Reminder"
+    },
+    "permissions": [
         "activeTab"
     ]
 }
