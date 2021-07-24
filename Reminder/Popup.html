@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-<style>
-
-
-</style>
+<head><title>Reminder App</title></head>
 <body>
     <h1>Reminder</h1>
     <input type="text" placeholder="Insert reminder" id="RText">
@@ -12,14 +9,15 @@
 
 <!--Script-->
 <script>
-
-document.getElementById("RButton").addEventListener("click",myFunction())
 function myFunction() {
-    var the_text = document.getElementById("RText").value;
-    var the_time = document.getElementById("searchTxt").value;
 
-    setTimeout(function(){ alert(); }, the_text*60000);
+    var the_text = document.getElementById("RText").value;
+    var the_time = document.getElementById("RTIME").value;
+
+    setTimeout(function(){ alert(the_text); }, the_time*1000);
 }
+document.getElementById("RButton").addEventListener("click",myFunction);
+
 
 
 </script>
