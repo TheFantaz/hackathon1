@@ -26,25 +26,11 @@
         <tr>
         	<td>
             	<br></br>
-            	<button id="RButton" class="button">Start</button>
+            	<button id="RButton" class="button" onclick="myFunction()">Start</button>
             </td>
         </tr>
     </table>
     <br></br>
 </body>
-<!--Script-->
-<script >
-function myFunction() {
-
-    var the_text = document.getElementById("RText").value;
-    var the_time = document.getElementById("RTIME").value;
-
-    setTimeout(function(){ alert(the_text); }, the_time*1000);
-}
-document.getElementById("RButton").addEventListener("click",myFunction);
-
-
-
-</script>
-</body>
+<script src="popup.js"></script>
 </html>
