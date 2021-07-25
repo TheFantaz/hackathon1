@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head><title>Reminder App</title>
-    script-src: 'self' 'unsafe-inline'
-    </head>
+<head>
+	<title>Reminder App</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
 <body>
-    <h1>Reminder</h1>
-    <input type="text" placeholder="Insert reminder" id="RText">
-    <input type="number" id="RTIME">
-    <button id="RButton">Start</button>
-
+    <center><h1>Reminder</h1></center>
+    <table>
+    	<tr>
+        	<td>
+            	Insert Reminder Notification:
+            </td>
+            <td>
+                    	    <input type="text" id="RText">
+            </td>
+        </tr>
+        <tr>
+        	<td>
+               Insert time to recieve Reminder:
+            </td>
+            <td>
+            	<input type="number" id="RTIME">
+            </td>
+        </tr>
+        <tr>
+        	<td>
+            	<br></br>
+            	<button id="RButton" class="button">Start</button>
+            </td>
+        </tr>
+    </table>
+    <br></br>
+</body>
 <!--Script-->
 <script >
 function myFunction() {
