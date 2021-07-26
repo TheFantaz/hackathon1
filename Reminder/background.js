@@ -3,7 +3,7 @@ function myFunction(the_text,the_time) {
     //var the_text = document.getElementById("RText").value;
     //var the_time = document.getElementById("RTIME").value;
 
-    setTimeout(function(){ alert(the_text); }, the_time*1000);
+    setTimeout(function(){ alert(the_text); }, the_time*60000);
 }
 
 chrome.runtime.onMessage.addListener(
